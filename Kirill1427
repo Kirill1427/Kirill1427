@@ -1,0 +1,15 @@
+Kitchen kitchen; 
+	Bedroom bedroom;
+	
+	House(Kitchen kitchen, Bedroom bedroom) {
+		this.kitchen = kitchen;
+		this.bedroom = bedroom;
+	}
+	
+	// ...
+}
+
+// тесты
+Kitchen kitchen = new DummyKitchen(null); 
+Bedroom bedroom = new DummyBedroom();
+House house = new House (kitchen, bedroom);
